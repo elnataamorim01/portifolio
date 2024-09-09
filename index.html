@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elnatã Amorim | Portfolio</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul >
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+
+        <img id="colorDark" src="images/lua.png" alt="Imagem lua" height="25px" width="25px">
+    </header>
+
+    <h1 id="home" class="titleDescription">DESENVOLVEDOR && <span>PROGRAMADOR FRONT END</span></h1>
+
+    <h3 class="description">Elnatã Amorim, Canoas-RS, Analista de Software e Desenvolvedor.</h3>
+
+    <div class="icons">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/elnata-amorim/" target="_blank"><img class="liIcons" src="images/linkedin.png" alt="icon likedin" width="30px" height="30px"> </a>
+            </li>
+            <li>
+                <a href="https://github.com/elnataamorim01" target="_blank"><img class="liIcons" src="images/github.png" alt="icon GitHub" width="30px" height="30px"></a>
+            </li>
+            <li >
+                <a href="https://www.instagram.com/el_nata.amorim/" target="_blank"><img class="liIcons" src="images/instagram.png" alt="icon instagram" width="30px" height="30px"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btnProjetosDiv">
+        <a href="#projetos">
+            <button class="btnProjetos">VER PROJETOS
+                <svg class="imageArrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#161616">
+                    <path d="M360-200v-80h264L160-744l56-56 464 464v-264h80v400H360Z" />
+                </svg>
+            </button>
+        </a>
+    </div>
+
+    <div class="videoYouTube">
+        <iframe width="1060" height="315" src="https://www.youtube.com/embed/ABzDOSQkhTM"
+            title="Imagens Incríveis da Natureza (4k)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="skill">
+        <p>Conhecimento nas seguintes tecnologias</p>
+
+        <ul class="tecnologias_list">
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/git.svg" alt="icon git">
+            </li>
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/html.svg" alt="icon HTML">
+            </li>
+
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/sass.svg" alt="icon sass">
+            </li>
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/js.svg" alt="">
+            </li>
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/wordpress.svg" alt="">
+            </li>
+            <li class="tecnologias_itens">
+                <img class="tecnologias_logos" src="images/mysql.svg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <!--PROJETOS-->
+    <div id="projetos" class="containerProjetos">
+
+        <h1>PROJETOS</h1>
+
+        <!--PROJETO 1-->
+        <div class="containerprojeto">
+            <img class="imgprojeto" src="images/projetoLogin.png" alt="Imagem Ecommerce">
+
+            <div class="projetoDescricao">
+                <h2>TELA DE LOGIN</h2>
+                <h3>Cadastro e registro de usuário</h3>
+
+                <ul class="projetoLista">
+                    <li>Sistema de simulação de autenticação e login de usuários</li>
+                    <li><strong>Nível da dificuldade:</strong> Básico</li>
+                </ul>
+
+                <ul class="projetoLogos">
+                    <li class="projetoList">
+                        <img class="tecnologias_logos" src="images/html.svg" alt="Logo HTML">
+                    </li>
+                    <li class="projetoList">
+                        <img class="tecnologias_logos" src="images/sass.svg" alt="Logo Sass">
+                    </li>
+                    <li class="projetoList">
+                        <img class="tecnologias_logos" src="images/js.svg" alt="Logo JavaScript">
+                    </li>
+                </ul>
+
+                <div class="projetoBtns">
+                    <a href="https://elnataamorim01.github.io/tela-de-login/" target="_blank">
+                        <button class="btnProjetosContainer">PRÉVIA <img class="iconArrowUp" src="images/arrow_up.svg"
+                                alt="icon arrow up"></button>
+                    </a>
+
+                    <a class="linkRepositorio" href="https://github.com/elnataamorim01/tela-de-login"
+                        target="_blank">REPOSITÓRIO</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--PROJETO 2-->
+        <div class="containerprojeto container2">
+            <img class="imgprojeto" src="images/projetoLide.png" alt="Imagem Ecommerce">
+
+            <div id="projeto3Descricao" class="projetoDescricao">
+                <h2>LIDETECH</h2>
+                <h3>Venda e hospedagem de sites</h3>
+
+                <ul class="projetoLista">
+                    <li>Site para capitação de clientes e divulgação de produtos</li>
+                    <li><strong>Nível da dificuldade:</strong> Intermediário</li>
+                </ul>
+
+                <div class="projetoLogo">
+                    <img class="logoWordpress" src="images/wordpress.svg" alt="Logo wordpress">
+                </div>
+
+                <a class="btnprojeto" href="https://lidetech.com.br/" target="_blank">
+                    <button class="btnProjetosContainer">PRÉVIA <img class="iconArrowUp" src="images/arrow_up.svg"
+                            alt="icon arrow up"></button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--SOBRE MIM-->
+    <div id="sobre" class="aboutMe">
+        <img class="aboutMe_myImg" src="images/my-img.png" alt="Minha foto">
+
+        <div class="aboutMe_Container">
+            <h1>SOBRE MIM</h1>
+
+            <p class="paragraph_aboutMe">Meu nome é Elnatã Amorim, sou formado em Análise e Desenvolvimento de Sistemas.
+                A minha primeira linguagem de programação e aquela em que tenho mais autonomia é o JavaScript. Meu
+                principal objetivo é me tornar um programador Full Stack, dominando tanto o Front-end quanto o Back-end
+                e banco de dados, para ter a capacidade de criar meus próprios projetos de forma independente.</p>
+
+            <span class="idiomas">Português: Nativo | Inglês: Básico | Espanhol: Básico</span>
+
+            <div class="aboutMe_Container_Bts">
+                <a class="container_Bts_Button" href="https://www.linkedin.com/in/elnata-amorim/"
+                    target="_blank"><button class="btn_linkedin">CONECTE-SE COMIGO <img class="arrow_up"
+                            src="images/arrow_up.svg" alt="Imagem ceta"></button></a>
+
+                <a title="Baixar currículo" class="container_Bts_Link" href="curriculo/Elnatã Amorim - currículo.pdf" target="_blank">CURRÍCULO</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerSkills">
+        <div class="formacaoExperiencias">
+            <div class="formacao">
+
+                <h1>FORMAÇÃO</h1>
+
+                <p>Análise e Desenvolvimento de Sistemas<br>
+                Concluído em Junho de 2024<br>Univercidade Estácio de Sá - Santa Cruz/RS
+                </p>
+
+            </div>
+
+            <div class="experiencias">
+
+                <h1>EXPERIÊNCIAS RELEVANTES</h1>
+                <ul>
+                    <li>Desenvolvedor Autônomo - <a href="https://lidetech.com.br" target="_blank">Lidetech</a></li>
+                    <li>Suporte técnico N1 - KingHost</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="faqContainer">
+            <h1 class="cursosEHabilidades">CURSOS E HABILIDADES</h1>
+            <div class="faq-item">
+                <div class="faq-question">Programador Full Stack - OneBitCode <img class="imgSeta" src="images/seta-para-baixo.png" alt=""></div>
+                <div class="faq-answer">O curso apresenta uma trilha de conhecimento necessária para atuar como
+                    programador Full Stack. Já foram abordadas as tecnologias HTML, CSS, SASS, JavaScript e Git. O curso
+                    ainda está em andamento.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Wordpress - Udemy <img class="imgSeta" src="images/seta-para-baixo.png" alt="icon seta"></div>
+                <div class="faq-answer">No curso, foi abordado o uso da plataforma WordPress, incluindo a criação de
+                    sites institucionais, landing pages e e-commerce. Também foram explorados os principais plugins
+                    disponíveis na ferramenta</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">MySQL Básico - Udemy <img class="imgSeta" src="images/seta-para-baixo.png" alt=""></div>
+                <div class="faq-answer">No curso, foram abordados os principais comandos do MySQL, incluindo CREATE,
+                    SHOW, DROP, SELECT, UPDATE e DELETE.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Conhecimentos relevantes <img class="imgSeta" src="images/seta-para-baixo.png" alt=""></div>
+                <div class="faq-answer"><strong>Tenho conhecimento em: </strong>Web server, DNS,
+                    configurações de contas de email, email marketing, Linux, registro de domínios, CMS, FTP, SSH e
+                    testes de rede.</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="contato" class="contato">
+        <h1>CONTATE-ME</h1>
+        <p>Se tiver qualquer dúvida, sinta-se à vontade para entrar em contato. Ficarei feliz em ajudar! Caso queira, pode seguir-me nas redes sociais para acompanhar.</p>
+
+        <ul class="contatoList">
+            <li class="contatoListItem">
+                <a href="https://www.linkedin.com/in/elnata-amorim/" target="_blank"><img class="liIcons" src="images/linkedin.png" alt="icon likedin"> Linkedin</a>
+            </li>
+            <li class="contatoListItem">
+                <a href="https://github.com/elnataamorim01" target="_blank"><img class="liIcons" src="images/github.png" alt="icon GitHub"> GitHub</a>
+            </li>
+            <li class="contatoListItem">
+                <a href="https://www.instagram.com/el_nata.amorim/" target="_blank"><img class="liIcons" src="images/instagram.png" alt="icon instagram">Instagram</a>
+            </li>
+        </ul>
+
+        <a class="contatoEmail" href="mailto:elnata.amorim999@gmail.com">
+            <button class="btnEnviar">Enviar um email</button>
+        </a>
+    </div>
+
+    <hr>
+    <footer>
+        <p class="paragraph">
+            © 2024. Desenvolvido por
+            <a href="https://www.linkedin.com/in/elnata-amorim/" target="_blank">Elnatã Amorim</a>.
+          </p>
+    </footer>
+    
+    <class class="footerMobile">
+        <ul class="footerMobileList">
+            <li>
+                <a class="iconFooter" href="#home">
+                    <img src="images/casa.png" alt="" width="30px">
+                </a>
+            </li>
+            <li>
+                <a class="iconFooter" href="#projetos">
+                    <img src="images/pages.png" alt="" width="30px">
+                </a>
+            </li>
+            <li>
+                <a class="iconFooter" href="#sobre">
+                    <img src="images/pessoa.png" alt="" width="30px">
+                </a>
+            </li>
+            <li>
+                <a class="iconFooter" href="#contato">
+                    <img src="images/envelope.png" alt="" width="30px">
+                </a>
+            </li>
+        </ul>
+    </class>
+</body>
+
+</html>
+

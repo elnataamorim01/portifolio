@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 80px;
+        align-items: center;
+        border-bottom: #bbbbbb 1px solid;
+        background-color: #E9E9E9;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 50px;
+
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #161616;
+                    font-size: 13px;
+                    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+
+        #colorDark {
+            cursor: pointer;
+        }
+    }
+
+    #home {
+        scroll-margin-top: 160px; 
+    }
+
+    .titleDescription {
+        font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 10rem;
+        font-size: 50px;
+        font-weight: 600;
+
+        span {
+            font-weight: 100;
+        }
+    }
+
+    .description {
+        font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 23px;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .icons {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 22px;
+            column-gap: 10px;
+
+            li {
+                list-style: none;
+
+                img {
+                    cursor: pointer;
+                    filter: brightness(1) invert(0);
+                }
+            }
+        }
+    }
+
+    .videoYouTube {
+        position: relative;
+    }
+
+    .btnProjetosDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+        margin-bottom: 50px;
+
+        a{
+            text-decoration: none;
+        }
+
+        .btnProjetos {
+            cursor: pointer;
+            border: solid 1px #161616;
+            border-radius: 40px;
+            padding: 13px 35px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            column-gap: 10px;
+            font-size: 17px;
+
+
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .skill {
+        text-align: center;
+        display: inline-flex;
+        flex-direction: row;
+        background-color: #C7C8C9;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -70px;
+        padding: 10rem 10% 2.5rem;
+        column-gap: 1.5rem;
+
+
+        p {
+            font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+            overflow-wrap: break-word;
+            font-weight: 100;
+            text-align: start;
+        }
+
+        .tecnologias_list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .5rem;
+
+
+            .tecnologias_itens {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 6rem;
+                height: 6rem;
+                border: 1px solid #94949c;
+                border-radius: 50rem;
+
+                .tecnologias_logos {
+                    height: 55%;
+                }
+            }
+        }
+    }
+
+    #projetos {
+        scroll-margin-top: 100px;
+    }
+    
+
+    .containerProjetos {
+        h1 {
+            font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 64px;
+            font-weight: 100;
+            letter-spacing: 5px;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .container2{
+            margin-top: 80px;
+        }
+
+        .containerprojeto {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin-left: 6%;
+            column-gap: 5%;
+            width: 90%;
+
+            .imgprojeto {
+                border-radius: 10px;
+                width: 760px;
+                height: 480px;
+            }
+
+            .projetoDescricao {
+                text-align: start;
+
+                h2 {
+                    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 40px;
+                    font-weight: 200;
+                    letter-spacing: 3px;
+                }
+
+                h3 {
+                    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 20px;
+                    font-weight: 100;
+                    margin-top: 17px;
+                    margin-bottom: 17px;
+                }
+
+                .projetoLogos {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: .5rem;
+
+                    .projetoList {
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 4rem;
+                        height: 4rem;
+                        border: 1px solid #94949c;
+                        border-radius: 50rem;
+
+                        .tecnologias_logos {
+                            height: 55%;
+                        }
+                    }
+                }
+
+                .projetoBtns {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    column-gap: 20%;
+
+                    a {
+                        button {
+                            cursor: pointer;
+                            padding: 10px 40%;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            color: #333333;
+                            font-weight: 100;
+                            font-size: 18px;
+                            border-radius: 50px;
+                            border: solid 1px #000;
+                            transition: .3s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                            img {
+                                width: 25px;
+
+                            }
+                        }
+                    }
+
+
+                    .linkRepositorio {
+                        font-size: 19px;
+                        font-weight: 400;
+                        color: #333333;
+                        text-decoration: none;
+                        font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                }
+
+                .projetoLista {
+                    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 18px;
+                    font-weight: 100;
+                    list-style-position: inside;
+                }
+
+                .projetoLogo {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 4rem;
+                    height: 4rem;
+                    border: 1px solid #94949c;
+                    border-radius: 50rem;
+
+                    .logoWordpress {
+                        height: 75%;
+                    }
+                }
+
+                .btnprojeto {
+
+                    button {
+                        cursor: pointer;
+                        padding: 10px 10%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: #333333;
+                        font-weight: 200;
+                        font-size: 18px;
+                        border-radius: 50px;
+                        border: solid 1px #000;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        img {
+                            width: 25px;
+                            margin-left: 7%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        column-gap: 5%;
+
+        .aboutMe_myImg {
+            border-radius: 50rem;
+            width: 20rem;
+            height: 20rem;
+        }
+
+        .aboutMe_Container {
+            text-align: start;
+
+
+            h1 {
+                font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 64px;
+                font-weight: 100;
+            }
+
+            p,
+            span {
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 100;
+                color: #333333;
+            }
+
+            p {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .aboutMe_Container_Bts {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+
+                .container_Bts_Button {
+                    text-decoration: none;
+                    width: 38%;
+
+
+                    button {
+                        column-gap: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        text-align: center;
+                        cursor: pointer;
+                        padding: 10px 5%;
+                        border-radius: 50px;
+                        transition: 0.3s ease-in-out;
+                        font-size: 18px;
+                        font-weight: 100;
+                        color: #333333;
+                        border: solid 1px #000;
+
+                        img {
+                            width: 25px;
+                        }
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .container_Bts_Link {
+                    text-decoration: none;
+                    color: #333333;
+                    margin-left: 1.5%;
+                    font-size: 18px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    //FAQ
+    .containerSkills {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0 7%;
+
+
+        .formacaoExperiencias {
+            width: 50%;
+            padding-top: 2%;
+
+            h1 {
+                font-weight: 300;
+                text-align: start;
+                font-size: 35px;
+            }
+
+            p {
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 100;
+                text-align: start;
+                line-height: 1.2;
+                margin-bottom: 50px;
+            }
+
+            ul {
+                text-align: start;
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 100;
+                list-style-position: inside;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-weight: bold;
+                    }
+
+                    li:first-child {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+
+
+            }
+        }
+
+        .faqContainer {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            font-weight: 100;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: 300;
+                font-size: 35px;
+            }
+
+            .faq-item {
+                margin-bottom: 10px;
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .faq-question {
+                background: #b9b9b9;
+                color: #000000;
+                padding: 15px;
+                font-weight: 100;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: start;
+                font-size: 18px;
+                display: flex;
+                justify-content: space-between;
+
+                .imgSeta {
+                    width: 15px;
+                    height: 15px;
+                    object-fit: contain;
+                }
+
+            }
+
+            .faq-answer {
+                max-height: 0;
+                overflow: hidden;
+                padding: 0 10px;
+                background: #f9f9f9;
+                border-radius: 5px;
+                margin-top: 5px;
+                text-align: start;
+                font-size: 17px;
+                transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            }
+
+            .faq-item.open .faq-answer {
+                max-height: 200px;
+                padding: 10px;
+            }
+
+        }
+    }
+
+    .contato {
+        padding: 120px 7%;
+
+        h1 {
+            font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 64px;
+            font-weight: 200;
+        }
+
+        p {
+            font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .contatoList {
+            font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 2%;
+
+            .contatoListItem {
+                list-style-position: inside;
+                list-style: none;
+                margin: 30px 0;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5%;
+
+                    &:hover {
+                        color: #333333;
+                    }
+
+                    img {
+                        width: 25px
+                    }
+                }
+            }
+        }
+
+        .contatoEmail {
+            button {
+                height: 40px;
+                width: 25%;
+                font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                margin-top: 30px;
+                cursor: pointer;
+                border-radius: 50px;
+                border: solid 1px #000;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+
+        p {
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+
+    .footerMobile{
+        ul{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 428px) {
+    body {
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10%;
+            position: relative;
+            ul {
+                column-gap: 18px;
+                display: none;
+            }
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            padding: 10rem 0% 2.5rem;
+
+            p {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .tecnologias_list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .videoYouTube {
+            iframe {
+                width: 100%;
+                height: 315px;
+            }
+        }
+
+        .aboutMe {
+            padding: 2.5%;
+            display: flex;
+            flex-direction: column;
+
+            .aboutMe_myImg {
+                margin-top: 80px;
+            }
+
+            .aboutMe_Container {
+                text-align: justify;
+
+                h1 {
+                    font-size: 40px;
+                    margin-top: 40px;
+                }
+
+                .aboutMe_Container_Bts {
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    text-wrap: nowrap;
+
+                    .container_Bts_Button {
+                        text-decoration: none;
+                        width: 70%;
+
+                        button {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .container_Bts_Link {
+                        text-decoration: none;
+                        color: #333333;
+                        margin-left: 1.5%;
+                        font-size: 18px;
+                        transition: 0.3s ease-in-out;
+                        margin-top: 15px;
+                        font-size: 20px;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .containerProjetos {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            h1 {
+                font-size: 35px;
+                text-align: center;
+            }
+
+
+// 1
+            .container2{
+                margin-top: 80px;
+            }
+            .containerprojeto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+                column-gap: 0;
+                width: 100%;              
+
+                #projeto3Descricao {
+                    text-align: start;
+                    margin-left: 9%;
+                }
+
+                .imgprojeto {
+                    width: 760px;
+                    height: 280px;
+                    margin-left: 10%;
+                }
+
+                .projetoDescricao {
+                    text-align: start;
+
+                    h2 {
+                        font-size: 35px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .containerprojeto {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+
+                .imgprojeto {
+                    width: 100%;
+                    height: 280px;
+                }
+
+                .projetoDescricao {
+                    text-align: start;
+                    margin-left: 4.5%;
+
+                    h2 {
+                        margin-top: 20px;
+                        font-size: 35px;
+                    }
+
+                    .projetoBtns {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        column-gap: 30%;
+
+                    }
+                }
+            }
+        }
+
+        .containerSkills {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            padding: 0 2%;
+
+
+            .formacaoExperiencias {
+                width: 100%;
+                padding-top: 2%;
+
+                h1 {
+                    font-size: 30px;
+                    text-wrap: nowrap;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .faqContainer {
+                width: 100%;
+                padding: 50px 2px;
+
+                h1 {
+                    text-align: start;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .contato {
+            padding: 50px 2%;
+
+            h1 {
+                font-size: 45px;
+            }
+
+
+            .contatoList {
+                column-gap: 7%;
+            }
+
+            .contatoEmail {
+                button {
+                    height: 50px;
+                    width: 60%;
+                }
+            }
+        }
+
+        footer{
+            margin-bottom: 80px;
+            height: 60px;
+        }
+
+        .footerMobile{
+            ul{
+                background-color: #E9E9E9;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 80px;
+                align-items: center;
+                justify-content: center;
+                column-gap: 15%;
+                position: fixed;
+                z-index: 1;
+                bottom: 0;
+                border-top: solid 1px #94949c;
+
+                li{
+                    list-style: none;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//FAZER
+//Transition dos icones
+//Cor dos icones das redes sociais
+//header fixed
+// Arrumar cores dos icones de conhecimento
+//Deixar o botao previa todo clicavel
+//Deixar minha foto no canva em um tamanho padrão
